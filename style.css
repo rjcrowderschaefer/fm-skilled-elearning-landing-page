@@ -24,7 +24,7 @@ html {
 
 img {
   display: block;
-  /* max-width: 100%; */
+  max-width: 100%;
 }
 
 menu:not(article menu),
@@ -93,7 +93,8 @@ body {
 
 #pageAside {
     grid-area: aside;
-    margin: 0 10px 0 10px;
+    margin: 0 0 0 0;
+    overflow: hidden;
 }
 
 h1 {
@@ -110,7 +111,6 @@ h1 {
     font-weight: 500;
     line-height: 2.4rem;
     word-spacing: .1rem;
-
 }
 
 .desc-aside {
@@ -121,11 +121,11 @@ h1 {
     background-image: linear-gradient(#FF6F48, #F02AA6);
     color: #ffffff;
 }
-/* 
+ 
 .image-hero-mobile {
-    transform: scale(1.23);
+    transform: scale(1.17);
     margin: 50px 0 0 0;
-} */
+} 
 
 #pageContent {
     grid-area: main;
@@ -140,7 +140,7 @@ h1 {
     border-radius: 5px;
     font-size: 2.4rem;
     font-weight: 800;
-    width: 343px;
+    width: 243px;
     height: 120px;
     padding-left: 25px;
     line-height: 3.2rem;
@@ -148,12 +148,12 @@ h1 {
 }
 
 .category {
-    /* margin-left: 30px; */
+    margin-left: 20px;
     margin-bottom: 40px;
-    /* margin-right: 20px; */
+    margin-right: 20px;
     background-color: #ffffff;
     /* padding-left: 20px; */
-    width: 343px;
+    width: 243px;
     height: 225px;
     border-radius: 5px;
     padding: 30px 10px 0 25px;
@@ -202,7 +202,6 @@ h4 {
         grid-template-columns: repeat(2, 1fr);
         height: 100vh;
         margin: 0;
-        /* overflow-x: hidden; */
-    }
+    } 
 
-}
+ }  
