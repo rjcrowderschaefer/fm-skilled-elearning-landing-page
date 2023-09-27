@@ -70,25 +70,28 @@ body {
     grid-area: header;
     display: flex;
     justify-content: space-between;
-    margin: 15px 10px 0 10px;
+    align-items: center;
+    margin: 16px 16px 0 16px;
 }
 
 .logo-light {
     width: 89px;
     height: 35px;
+    margin-top: 6px;
 }
 
 .btn {
-    border-radius: 25px;
-    width: 105px;
-    height: 35px;
-    font-size: 1.1rem;
+    border-radius: 28px;
+    width: 140px;
+    height: 48px;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
 .btn-header {
     background-color: #13183F;
     color: #ffffff;
+    margin-right: 3px;
 }
 
 #pageAside {
@@ -101,16 +104,16 @@ h1 {
     font-size: 4.0rem;
     font-weight: 800;
     color: #13183F;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin: 30px 16px 20px 16px;
 }
 
 .desc {
     font-size: 1.6rem;
     color: #83869A;
     font-weight: 500;
-    line-height: 2.4rem;
-    word-spacing: .1rem;
+    line-height: 2.6rem;
+    margin-left: 16px;
+    margin-right: 16px;
 }
 
 .desc-aside {
