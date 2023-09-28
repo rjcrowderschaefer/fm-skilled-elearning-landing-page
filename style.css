@@ -53,6 +53,11 @@ a {
 }
 
 body {
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+.content-container {
     display: grid;
     grid-template-areas:
         "header"
@@ -62,11 +67,13 @@ body {
     grid-auto-rows: min-content;
     grid-template-columns: 1;
     height: 100vh;
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 0;
-    /* background: linear-gradient(180deg, #FFF 10%, #F0F1FF 100%);
-    width: 375px; */
 }
+/* 
+#pageHeader, #pageAside, #pageContent, #pageFooter {
+    overflow: hidden;
+} */
 
 #pageHeader {
     grid-area: header;
@@ -98,8 +105,7 @@ body {
 
 #pageAside {
     grid-area: aside;
-    margin: 0 0 0 0;
-    overflow: hidden;
+    margin: 0;
 }
 
 h1 {
@@ -229,17 +235,21 @@ h4 {
 
 @media only screen and (min-width: 768px) {
     
-    body {
+    .content-container {
         display: grid;
         grid-template-areas:
             "header header"
             "aside aside"
             "main main"
             "footer footer";
-        grid-auto-rows: min-content;
+        grid-template-rows: auto;
         grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: minmax(2, 1fr); */
+        overflow-x: hidden;
         height: 100vh;
         margin: 0;
+        min-height: 0;
+        min-width: 0;
     }
 
     #pageHeader {
@@ -249,14 +259,7 @@ h4 {
     #pageAside {    
         display: flex;
         flex-direction: row;
-        overflow: hidden;
-        margin-bottom: 210px;
-    }
-
-    .aside-container-right {
-        position: absolute;
-        right: -280px;
-        top: -45px;
+        margin-bottom: 60px;
     }
 
     .image-hero-mobile {
@@ -264,24 +267,39 @@ h4 {
     }
 
     .image-hero-tablet {
-        display: block;
+        display: inline-block;
         width: 641px;
         height: 640px;
-        top: 40px;
-        z-index: 1;
+        /* top: -120px;
+        right: -270px; */
         transform: scale(1.15);
+        /* margin-left: 200px; */
+        /* padding-bottom: 100px; */
+        margin-top: -120px;
+        margin-left: -30px;
     }
 
+    .aside-container-left {
+        margin-top: 85px;
+        margin-right: 0px;
+        margin-bottom: 0;
+        margin-left: 39px;
+        height: auto;
+    }
+
+
     h1 {
-        margin: 85px 403px 0 39px;
+        width: 350px;
+        margin: 0 0 25px 0;
     }
 
     .desc-aside {
-        margin: 0 331px 25px 39px;
+        width: 400px;
+        margin: 0 0 25px 0;
     }
 
     .btn-aside {
-        margin-left: 39px;
+        margin: 0;
     }
 
  }  
