@@ -64,6 +64,8 @@ body {
     height: 100vh;
     margin: 0 0 0 0;
     padding: 0;
+    /* background: linear-gradient(180deg, #FFF 10%, #F0F1FF 100%);
+    width: 375px; */
 }
 
 #pageHeader {
@@ -121,12 +123,16 @@ h1 {
 }
 
 .btn-aside {
-    background-image: linear-gradient(#FF6F48, #F02AA6);
+    background-image: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     color: #ffffff;
+    margin-left: 16px;
+    width: 167px;
+    height: 56px;
+    border-radius: 31/5px;;
 }
  
 .image-hero-mobile {
-    transform: scale(1.17);
+    /* transform: sc`ale(1.17); */
     margin: 50px 0 0 0;
 } 
 
@@ -134,31 +140,30 @@ h1 {
     grid-area: main;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .popular {
-    background-image: linear-gradient(#FF6F48, #F02AA6);
+    background-image: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     color: #ffffff;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 2.4rem;
     font-weight: 800;
-    width: 243px;
+    width: 343px;
     height: 120px;
     padding-left: 25px;
     line-height: 3.2rem;
     margin-bottom: 70px;
+    margin-left: 16px;
 }
 
 .category {
-    margin-left: 20px;
+    margin-left: 16px;
     margin-bottom: 40px;
     margin-right: 20px;
     background-color: #ffffff;
-    /* padding-left: 20px; */
-    width: 243px;
-    height: 225px;
-    border-radius: 5px;
+    width: 343px;
+    height: 259px;
+    border-radius: 10px;
     padding: 30px 10px 0 25px;
     position: relative;
 }
@@ -166,19 +171,33 @@ h1 {
 .animation, .design, .photography, .crypto, .business {
     position: absolute;
     top: -28px;
+    left: 28px;
 }
 
 h4 {
     font-size: 2.0rem;
     font-weight: 800;
     color: #13183F;
-    margin-top: 10px;
+    margin-top: 25px;
     margin-bottom: 5px;
+    margin-left: 0px;
+}
+
+.category .desc {
+    color: #83869A;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-right: 20px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 30px;
 }
 
 .get-started {
     font-size: 1.6rem;
     color: #F74780;
+    margin-left: 0px;
 }
 
 #pageFooter {
@@ -189,7 +208,15 @@ h4 {
     background-color: #13183F;
     width: 100%;
     height: 120px;
-    padding: 0 10px 0 10px;
+    padding: 0 16px 0 16px;
+}
+
+.btn-footer {
+    border-radius: 28px;
+    width: 140px;
+    height: 48px;
+    background: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    color: #FFFFFF;
 }
 
 @media only screen and (min-width: 696px) {
